@@ -1,0 +1,59 @@
+.container {
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  height: 30px;
+}
+
+#div-1,
+#div-2 {
+  width: 50%;
+}
+
+#div-3,
+#div-6 {
+  width: 95%;
+}
+
+#div-5 {
+  width: 90%;
+}
+
+#div-4 {
+  width: 5%;
+}
+#div-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#div-8 {
+  width: 20px;
+  height: 20px;
+}
+#div-9 {
+  width: 5%;
+  height: 100%;
+}
+#div-10 {
+  width: 100%;
+  height: 10px;
+}
+
+#div-11 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#div-12 {
+  width: 5%;
+}
+
+#div-14 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#div-13 {
+  width: 1%;
+}
