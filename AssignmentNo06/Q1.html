@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 06 Q1</title>
+    </head>
+
+    <body onload="displayDateGreeting()">
+
+        <h1>Date & Greeting Web Page</h1>
+        <div id="dateTimeFun"></div>
+
+        <script>
+            function displayDateGreeting() {
+                const now = new Date();
+                const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                                'July', 'August', 'September', 'October', 'November', 'December'];
+    
+                const dayName = days[now.getDay()];
+                console.log(dayName)
+                const day = now.getDate();
+                console.log(dayName)
+                const month = months[now.getMonth()];
+                const year = now.getFullYear();
+    
+        
+                const hour = now.getHours();
+                let greeting = "";
+                if (hour < 12) {
+                    greeting = "Good Morning";
+                } else if (hour < 17) {
+                    greeting = "Good Afternoon";
+                } else {
+                    greeting = "Good Evening";
+                }
+    
+                
+                const endOfYear = new Date(year, 11, 31);
+                const diffTime = endOfYear - now;
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+                document.getElementById("dateTimeFun").innerHTML = `<b>
+                    Today is ${dayName}, ${day} ${month} ${year},<br>
+                    Welcome, and ${greeting} to You.<br>
+                    Number of days left till end of year:<span style="color:blue">${diffDays}</span>
+                    </b>
+                    `;
+                document.getElementById("dateTimeFun").style.color="Red"
+                document.getElementById("dateTimeFun").style.fontSize="30px"
+                
+            }
+        </script>
+
+    </body>
+
+</html>

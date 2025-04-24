@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 06 Q3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container" style="border: 0ch;">
+            <div>
+                <h1>
+                    <u>
+                        Calculator
+                    </u>
+                </h1>
+            </div>
+
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <label for="num1"> Enter Number 1</label></td>
+                            <td colspan="3">
+                                <input type="number" id="num1"
+                                    placeholder="Enter Number 1" required>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="2">
+                                <label for="num2"> Enter Number 2</label></td>
+                            <td colspan="3">
+                                <input type="number" id="num2"
+                                    placeholder="Enter Number 2" required>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="2">
+                                <label for="result"> Result</label></td>
+                            <td colspan="3">
+                                <input type="text" id="result"
+                                    placeholder="Result">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="5">
+                                <button onclick="addition()">Addition</button>
+                                <button
+                                    onclick="subtraction()">Subtraction</button>
+                                <button
+                                    onclick="multiplication()">Multiplication</button>
+                                <button onclick="division()">Division</button>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+           
+           
+            function addition(){
+                let num1=parseInt(document.getElementById("num1").value)
+                let num2=parseInt(document.getElementById("num2").value)
+            
+                console.log(num1+""+num2)
+
+                let res=num1+num2
+                document.getElementById("result").value=res
+            }
+
+            function subtraction(){
+                
+               
+                let num1=parseInt(document.getElementById("num1").value)
+                let num2=parseInt(document.getElementById("num2").value)
+            
+                console.log(num1+""+num2)
+
+                let res=num1-num2
+                document.getElementById("result").value=res
+            
+            }
+            function multiplication(){
+                
+                
+                let num1=parseInt(document.getElementById("num1").value)
+                let num2=parseInt(document.getElementById("num2").value)
+            
+                console.log(num1+""+num2)
+
+                let res=num1*num2
+                document.getElementById("result").value=res
+
+               
+            }
+            function division(){
+              
+                    
+                    
+                let num1=parseInt(document.getElementById("num1").value)
+                let num2=parseInt(document.getElementById("num2").value)
+            
+                console.log(num1+""+num2)
+
+                let res=num1/num2
+                document.getElementById("result").value=res
+
+                }
+
+            
+
+        </script>
+    </body>
+</html>

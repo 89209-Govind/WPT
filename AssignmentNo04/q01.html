@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign-04 Ques-01</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #434343;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .navbar {
+            width: 70%;
+            padding: 12px;
+            border-radius: 4px;
+            background-color: #909090;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar>div {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 30px;
+        }
+
+        .navbar svg {
+            height: 24px;
+            width: 24px;
+        }
+
+        .title {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title div:first-child {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .iconDiv {
+            display: flex;
+            gap: 10px;
+        }
+
+        .iconDiv button {
+            text-decoration: none;
+            color: #000;
+            background-color: #21a7dc;
+            border: #046e98 solid 2px;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+
+        .twitterDiv {
+            background-color: #0479c7;
+            padding: 2px 4px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .twitterDiv svg {
+            height: 18px;
+            width: 18px;
+        }
+
+
+
+        .stickyNote {
+            position: relative;
+        }
+
+        .noteContent {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            height: 100%;
+            /* width: 100%; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .noteContent div:nth-child(1) {
+            font-weight: bold;
+        }
+        .noteContent textarea {
+            resize: none;
+            background: transparent;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <div class="title">
+                    <div>HTML5Sticky</div>
+                    <div>sticky notes for web</div>
+                </div>
+                <div class="iconDiv">
+                    <div style="color: #0b6db3;"></div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#098438"
+                            class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#b10707"
+                            class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="iconDiv">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                            class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                            class="bi bi-file-earmark-minus-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6 8.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="iconDiv">
+                    <a href="" class="twitterDiv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg>
+                    </a>
+                    <a href=""><button>$ Donate</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="col stickyNote">
+                        <img src="images/sn1.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn2.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn3.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn1.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="col stickyNote">
+                        <img src="images/sn3.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn4.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn2.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="col stickyNote">
+                        <img src="images/sn4.png" alt="">
+                        <div class="noteContent">
+                            <div>18/4/2025 12:40 PM</div>
+                            <textarea name="content" rows="4" cols="18" placeholder="Text here"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="twitterDiv" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+            </svg>
+            Tweet
+        </a>
+
+    </div>
+</body>
+
+</html>

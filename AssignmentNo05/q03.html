@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign-05 Ques-03</title>
+</head>
+<body>
+    <script>
+        while(true) {
+            let n = prompt("Enter a number (n) : ")
+            if(n < 0) {
+                alert("Please enter a valid positive integer!")
+            }
+            else {
+                let arr = []
+                for(let i=1; i<=n; i++) {
+                    if((i%2)==0) {
+                        arr.push(i)
+                    }
+                }
+                
+                let str = `Even numbers <= ${n}: `
+                let itr = 0
+                while(itr < arr.length) {
+                    str += arr[itr]
+                    if(itr != (arr.length-1))
+                        str += ", "
+                    itr++
+                }
+                console.log(str)
+                // console.log("Even numbers <= " + n + ": " + arr.join(", "))
+                break
+            }
+        }
+    </script>
+</body>
+</html>

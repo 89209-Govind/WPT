@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06 Q2</title>
+</head>
+<body>
+    <h1>
+        Enter Employee Names
+    </h1>
+    <input type="text" id="name">
+    <button onclick="addName()" value="Add Name">Add Name</button>
+    <button onclick="sortAndDisplay()" value="Sort & Display">Sort & Display</button>
+    <h3>Sorted Employee Names</h3>
+    <ul id="list"></ul>
+
+    <script>
+        let arrName=[]
+        let ul=document.getElementById("list")
+        function addName(){
+         let name=document.getElementById("name").value
+         console.log(name)
+         if(name==""){
+            alert("Name can not be empty!")
+         }else{
+            arrName.push(name)
+            alert("Name Added sucesfully")
+         }
+        }
+
+        function sortAndDisplay(){
+            ul.innerHTML=""
+            arrName.sort()
+            for(empName of arrName){
+                let str=`<li>${empName}</li>`
+                ul.innerHTML+=str
+            }
+        }
+    </script>
+</body>
+</html>
